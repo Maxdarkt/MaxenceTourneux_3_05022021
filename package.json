@@ -1,24 +1,21 @@
 {
-  "name": "writing-sass",
+  "name": "writting-sass",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./sass/main.scss:.public/css/style.css",
+    "sass": "sass --watch ./sass/main.scss:./public/css/style.css",
     "prefix": "postcss .public/css/style.css --use autoprefixer -d ./public/css/prefixed/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gerkx/maintainable-css-with-sass.git"
+    "url": "git+https://github.com/Maxdarkt/MaxenceTourneux_3_05022021.git"
   },
-  "author": "",
+  "author": "Maxdarkt",
   "license": "ISC",
   "browserslist": "last 4 versions",
   "bugs": {
-    "url": "https://github.com/gerkx/maintainable-css-with-sass/issues"
+    "url": "https://github.com/Maxdarkt/MaxenceTourneux_3_05022021/issues"
   },
-  "homepage": "https://github.com/gerkx/maintainable-css-with-sass#readme",
-  "keywords": [
-    "TP1"
-  ]
+  "homepage": "https://github.com/Maxdarkt/MaxenceTourneux_3_05022021#readme"
 }
