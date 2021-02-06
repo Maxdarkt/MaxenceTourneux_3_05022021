@@ -1,0 +1,22 @@
+.btn-head {
+    background-color: $colour_primary;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    margin-bottom: 50px;
+
+    a {
+        text-decoration: none;
+        color: $btn-color-text;
+        font-weight: bold;
+    }
+
+    &__link {
+    }
+
+    &:hover {
+        background-color: $colour_secondary;
+    }
+}

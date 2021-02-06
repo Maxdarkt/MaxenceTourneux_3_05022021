@@ -1,0 +1,14 @@
+/*---------------------map breakpoint-----------------------*/
+
+$breakpoints: (
+    mobile: 599px,
+    tablette: 980px,
+    desktop: 1280px
+    );
+
+@mixin mobile-only {
+    @media screen and (mmax-width: map-get($breakpoints, mobile)){
+        @content;
+    }
+}
+

@@ -1,0 +1,56 @@
+/*------------------------LOGO------------------------------------------*/
+.logo-head {
+    height: 65px;
+}
+h1 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0px;
+}
+
+/*---------------------------NAV--------------------------------------------*/
+nav {
+    background-color: $coulour-background__primary;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.local {
+    height: 50px;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $coulour-background__secondary;
+    border-top: 2px solid $coulour-border;
+    font-weight:bold;
+    &__icone {
+        width: 5%
+    }
+
+    &__ville {
+    }
+}
+
+.title {
+    width: 70%;
+    text-align:center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h2 {
+        width: 70%;
+        margin-bottom: 0px;
+        font-weight:bold;
+    }
+
+    p {
+        width: 90%;
+    }
+}
+
+.btn-head{
+    width:50%;
+}

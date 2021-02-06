@@ -1,0 +1,113 @@
+/*--------------------Couleur des textes-------------------------*/
+/*--------------------Couleur des background-------------------------*/
+/*--------------------Couleur des boutons-------------------------*/
+/*---------------------map breakpoint-----------------------*/
+body {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #000000;
+  /*
+  font-size: 2rem;
+  font-weight: 100;
+  line-height: 1.7;*/
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Shrikhand", sans-serif;
+  font-weight: 100;
+  /*
+  font-size: 5rem;
+  font-style: italic;*/
+}
+
+textarea {
+  font-family: "Roboto", sans-serif;
+  /*
+  font-weight: 100;
+  font-size: 2rem;*/
+}
+
+button {
+  font-family: "Roboto", sans-serif;
+  /*
+  font-weight: 900;
+  font-style: italic;
+  font-size: 2.75rem;*/
+}
+
+.btn-head {
+  background-color: #9356DC;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  margin-bottom: 50px;
+}
+.btn-head a {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-weight: bold;
+}
+.btn-head:hover {
+  background-color: #FF79DA;
+}
+
+/*------------------------LOGO------------------------------------------*/
+.logo-head {
+  height: 65px;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0px;
+}
+
+/*---------------------------NAV--------------------------------------------*/
+nav {
+  background-color: #f6f6f6;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.local {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eaeaea;
+  border-top: 2px solid #cfcfcf;
+  font-weight: bold;
+}
+.local__icone {
+  width: 5%;
+}
+.title {
+  width: 70%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.title h2 {
+  width: 70%;
+  margin-bottom: 0px;
+  font-weight: bold;
+}
+.title p {
+  width: 90%;
+}
+
+.btn-head {
+  width: 50%;
+}
+
+/*# sourceMappingURL=style.css.map */

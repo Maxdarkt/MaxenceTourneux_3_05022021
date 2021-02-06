@@ -1,0 +1,32 @@
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: $colour_text;
+    /*
+    font-size: 2rem;
+    font-weight: 100;
+    line-height: 1.7;*/
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Shrikhand', sans-serif;
+    font-weight: 100;
+    /*
+    font-size: 5rem;
+    font-style: italic;*/
+}
+
+textarea {
+    font-family: 'Roboto', sans-serif;
+    /*
+    font-weight: 100;
+    font-size: 2rem;*/
+}
+
+button {
+    font-family: 'Roboto', sans-serif;
+    /*
+    font-weight: 900;
+    font-style: italic;
+    font-size: 2.75rem;*/
+}
