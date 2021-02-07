@@ -20,3 +20,46 @@
         background-color: $colour_secondary;
     }
 }
+
+.btn-fon {
+    height: 70px;
+    width: 96%;
+    margin-left: 2%;
+    margin-right: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    &__bulle {
+        width: 30px;
+        height: 30px;
+        background-color: $colour_primary;
+        border-radius: 15px;
+        z-index: 10;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $btn-color-text;
+    }
+
+    &__btn {
+        width: 95%;
+        background-color: $coulour-background__primary;
+        border-radius: 15px;
+        margin-left: -15px;
+        display: flex;
+        align-items: center;
+
+        &:focus {
+            background-color: lighten($colour_primary,35%);
+        }
+    }
+    i {
+        margin-left: 40px;
+    }
+
+    p {
+        margin-left: 20px;
+    }
+}

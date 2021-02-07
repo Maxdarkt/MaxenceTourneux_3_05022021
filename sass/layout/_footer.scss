@@ -1,0 +1,28 @@
+footer {
+    background-color: $coulour-background__footer;
+    color: $colour_text-white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-top:25px;
+
+    ul {
+        list-style-type: none;
+        margin-left: 5%;
+        padding: 0;
+    }
+
+    li {
+        line-height: 2;
+    }
+    i{
+        width:30px;
+    }
+}
+
+.logo-footer {
+    height: 20px;
+    filter: invert(100%);
+    margin-left: 5%;
+
+}

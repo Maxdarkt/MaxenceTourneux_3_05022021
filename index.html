@@ -31,74 +31,106 @@
 
     <section>
 
-        <h3>Fonctionnement</h3>
+        <h3 class="section-h3">Fonctionnement</h3>
 
         <div class="Fonctionnement">
-            <div class="btn-Fon">
-                <p><i class="fas fa-mobile-alt"></i>Choisissez un restaurant</p>
+            <div class="btn-fon">
+                <div class="btn-fon__bulle">1</div>
+                <div class="btn-fon__btn">
+                    <i class="fas fa-mobile-alt"></i><p>Choisissez un restaurant</p>
+                </div>
             </div>
-            <div class="btn-Fon">
-                <p><i class="fas fa-list-ul"></i>Composez votre menu</p>
+            <div class="btn-fon">
+                <div class="btn-fon__bulle">2</div>
+                <div class="btn-fon__btn">
+                    <i class="fas fa-list-ul"></i><p>Composez votre menu</p>
+                </div>
             </div>
-            <div class="btn-Fon">
-                <p><i class="fas fa-store"></i>Dégustez au restaurant</p>
-            </div>
+            <div class="btn-fon">
+                <div class="btn-fon__bulle">3</div>
+                <div class="btn-fon__btn">
+                    <i class="fas fa-store"></i><p>Dégustez au restaurant</p>
+                </div>
+            </div> 
         </div>
     </section>
 
-    <section>
-        <h3>Restaurants</h3>
+    <section id="restaurants-prev">
+        <h3 class="section-h3">Restaurants</h3>
 
-        <div class="menus-4">
-            <div class="menu-prev">
-                <div class="image-menu">
-
-                </div>
-                <div class="legende-menu">
-                    <h4>La palette du goût</h4>
-                    <i class="far fa-heart"></i>
-                    <p>Ménilmontant</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="menus-4">
-            <div class="menu-prev">
-                <div class="image-menu">
+        <div class="menu-4">
+            <!--Restaurant 1-->
+            <div class="menu-4__prev">
+                <div class="menu-4__prev__img menu-4__prev__img--1">
 
                 </div>
-                <div class="legende-menu">
-
+                <div class="menu-4__prev__legende">
+                    <div class="menu-4__prev__legende__txt">
+                        <h4>La palette du goût</h4>
+                        <p>Ménilmontant</p>
+                    </div>
+                    <div class="menu-4__prev__legende__icone">
+                        <i class="far fa-heart"></i>
+                    </div>
+                    
+                    
                 </div>
             </div>
-        </div>
-
-        <div class="menus-4">
-            <div class="menu-prev">
-                <div class="image-menu">
+            <!--Restaurant 2-->
+            <div class="menu-4__prev">
+                <div class="menu-4__prev__img menu-4__prev__img--2">
 
                 </div>
-                <div class="legende-menu">
-
-                </div>
-            </div>
-        </div>
-
-        <div class="menus-4">
-            <div class="menu-prev">
-                <div class="image-menu">
-
-                </div>
-                <div class="legende-menu">
-
+                <div class="menu-4__prev__legende">
+                    <div class="menu-4__prev__legende__txt">
+                        <h4>La note enchantée</h4>
+                        <p>Charonne</p>
+                    </div>
+                    <div class="menu-4__prev__legende__icone">
+                        <i class="far fa-heart"></i>
+                    </div>
                 </div>
             </div>
+            <!--Restaurant 3-->
+            <div class="menu-4__prev">
+                <div class="menu-4__prev__img menu-4__prev__img--3">
+
+                </div>
+                <div class="menu-4__prev__legende">
+                    <div class="menu-4__prev__legende__txt">
+                        <h4>A la française</h4>
+                        <p>Cité Rouge</p>
+                    </div>
+                    <div class="menu-4__prev__legende__icone">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+            </div>
+            <!--Restaurant 4-->
+            <div class="menu-4__prev">
+                <div class="menu-4__prev__img menu-4__prev__img--4">
+
+                </div>
+                <div class="menu-4__prev__legende">
+                    <div class="menu-4__prev__legende__txt">
+                        <h4>Le délice des sens</h4>
+                        <p>Folie-Méricourt</p>
+                    </div>
+                    <div class="menu-4__prev__legende__icone">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+            </div>
+
+
         </div>
+
+
 
     </section>
 
     <footer>
-        <div class="logo-footer"><img src="./public/img/logo/ohmyfood.png" alt="Logo Ohmyfood" /></div>
+        <div><img src="./public/img/logo/ohmyfood.png" alt="Logo Ohmyfood" class="logo-footer"/></div>
         <ul>
             <li><i class="fas fa-utensils"></i>Proposer un restaurant</li>
             <li><i class="fas fa-hands-helping"></i>Devenir partenaire</li>

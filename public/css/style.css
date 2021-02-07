@@ -57,6 +57,44 @@ button {
   background-color: #FF79DA;
 }
 
+.btn-fon {
+  height: 70px;
+  width: 96%;
+  margin-left: 2%;
+  margin-right: 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn-fon__bulle {
+  width: 30px;
+  height: 30px;
+  background-color: #9356DC;
+  border-radius: 15px;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFFFFF;
+}
+.btn-fon__btn {
+  width: 95%;
+  background-color: #f6f6f6;
+  border-radius: 15px;
+  margin-left: -15px;
+  display: flex;
+  align-items: center;
+}
+.btn-fon__btn:focus {
+  background-color: #f2eafb;
+}
+.btn-fon i {
+  margin-left: 40px;
+}
+.btn-fon p {
+  margin-left: 20px;
+}
+
 /*------------------------LOGO------------------------------------------*/
 .logo-head {
   height: 65px;
@@ -88,8 +126,9 @@ nav {
   font-weight: bold;
 }
 .local__icone {
-  width: 5%;
+  width: 25px;
 }
+
 .title {
   width: 70%;
   text-align: center;
@@ -108,6 +147,106 @@ nav {
 
 .btn-head {
   width: 50%;
+}
+
+footer {
+  background-color: #353535;
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-top: 25px;
+}
+footer ul {
+  list-style-type: none;
+  margin-left: 5%;
+  padding: 0;
+}
+footer li {
+  line-height: 2;
+}
+footer i {
+  width: 30px;
+}
+
+.logo-footer {
+  height: 20px;
+  filter: invert(100%);
+  margin-left: 5%;
+}
+
+/*------------------------Section Fonctionnement-----------------------------------------*/
+.section-h3 {
+  width: 94.5%;
+  margin: 2% 2% 2% 3.5%;
+}
+
+#restaurants-prev {
+  background-color: #f6f6f6;
+  padding: 25px 0px 60px 0px;
+}
+
+/*----------------------Section Restaurants 4---------------------------------------------*/
+.menu-4 {
+  width: 94.5%;
+  height: 1050px;
+  margin: 2% 2% 2% 3.5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.menu-4__prev {
+  height: 250px;
+}
+.menu-4__prev__img {
+  height: 175px;
+  border-radius: 15px 15px 0 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.menu-4__prev__img--1 {
+  background-image: url("./../../public/img/restaurants/palette_gout.jpg");
+}
+.menu-4__prev__img--2 {
+  background-image: url("./../../public/img/restaurants/note_enchantee.jpg");
+}
+.menu-4__prev__img--3 {
+  background-image: url("./../../public/img/restaurants/francaise.jpg");
+}
+.menu-4__prev__img--4 {
+  background-image: url("./../../public/img/restaurants/delice_sens.jpg");
+}
+.menu-4__prev__legende {
+  height: 75px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  background-color: #FFFFFF;
+  border-radius: 0 0 15px 15px;
+}
+.menu-4__prev__legende__txt {
+  width: 48%;
+  margin-left: 2%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.menu-4__prev__legende__txt h4, .menu-4__prev__legende__txt p {
+  margin: 2% 0% 2% 0%;
+}
+.menu-4__prev__legende__icone {
+  width: 48%;
+  height: 100%;
+  margin-right: 2%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.menu-4__prev__legende__icone i:active {
+  color: #9356DC;
 }
 
 /*# sourceMappingURL=style.css.map */
