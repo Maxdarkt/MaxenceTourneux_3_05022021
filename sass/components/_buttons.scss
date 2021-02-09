@@ -50,11 +50,13 @@
         margin-left: -15px;
         display: flex;
         align-items: center;
+        cursor: pointer;
 
-        &:focus {
+        &:hover {
             background-color: lighten($colour_primary,35%);
         }
     }
+
     i {
         margin-left: 40px;
     }

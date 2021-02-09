@@ -4,19 +4,19 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    padding-top:25px;
+    padding-top: 25px;
 
-    ul {
-        list-style-type: none;
+    a {
+        display: block;
         margin-left: 5%;
         padding: 0;
+        line-height: 2;
+        text-decoration: none;
+        color: $colour_text-white;
     }
 
-    li {
-        line-height: 2;
-    }
-    i{
-        width:30px;
+    i {
+        width: 30px;
     }
 }
 
@@ -25,4 +25,8 @@ footer {
     filter: invert(100%);
     margin-left: 5%;
 
+}
+
+.menu-footer{
+    padding : 20px 0 50px 0;
 }

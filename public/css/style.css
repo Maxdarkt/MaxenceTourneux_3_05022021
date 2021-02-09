@@ -84,8 +84,9 @@ button {
   margin-left: -15px;
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
-.btn-fon__btn:focus {
+.btn-fon__btn:hover {
   background-color: #f2eafb;
 }
 .btn-fon i {
@@ -97,7 +98,7 @@ button {
 
 /*------------------------LOGO------------------------------------------*/
 .logo-head {
-  height: 65px;
+  height: 40px;
 }
 
 h1 {
@@ -107,7 +108,7 @@ h1 {
 }
 
 /*---------------------------NAV--------------------------------------------*/
-nav {
+.head {
   background-color: #f6f6f6;
   display: flex;
   flex-direction: column;
@@ -149,6 +150,47 @@ nav {
   width: 50%;
 }
 
+/*-------------------------------*/
+/*----------------------logo + retour------------------------------*/
+.head-h1 {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.retour {
+  color: black;
+  position: absolute;
+  left: 20px;
+}
+
+.head-prev {
+  height: 250px;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.head-prev__image_1 {
+  background-image: url("./../../public/img/restaurants/palette_gout.jpg");
+}
+
+.conteneur_menus {
+  height: 1200px;
+  background-color: #eaeaea;
+  border-radius: 35px 35px 0px 0px;
+  position: relative;
+  top: -35px;
+}
+
+.title-h2 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.title-h2 i {
+  height: 25px;
+}
+
 footer {
   background-color: #353535;
   color: #FFFFFF;
@@ -157,13 +199,13 @@ footer {
   justify-content: space-around;
   padding-top: 25px;
 }
-footer ul {
-  list-style-type: none;
+footer a {
+  display: block;
   margin-left: 5%;
   padding: 0;
-}
-footer li {
   line-height: 2;
+  text-decoration: none;
+  color: #FFFFFF;
 }
 footer i {
   width: 30px;
@@ -175,8 +217,12 @@ footer i {
   margin-left: 5%;
 }
 
+.menu-footer {
+  padding: 20px 0 50px 0;
+}
+
 /*------------------------Section Fonctionnement-----------------------------------------*/
-.section-h3 {
+section h3 {
   width: 94.5%;
   margin: 2% 2% 2% 3.5%;
 }
@@ -187,6 +233,14 @@ footer i {
 }
 
 /*----------------------Section Restaurants 4---------------------------------------------*/
+.lien {
+  display: block;
+  width: 100%;
+  height: 250px;
+  text-decoration: none;
+  color: #000000;
+}
+
 .menu-4 {
   width: 94.5%;
   height: 1050px;
@@ -196,7 +250,7 @@ footer i {
   justify-content: space-between;
 }
 .menu-4__prev {
-  height: 250px;
+  height: 100%;
 }
 .menu-4__prev__img {
   height: 175px;
@@ -247,6 +301,30 @@ footer i {
 }
 .menu-4__prev__legende__icone i:active {
   color: #9356DC;
+}
+
+.plat-prev {
+  height: 70px;
+  width: 98%;
+  margin: 0 1% 15px 1%;
+  background-color: white;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.plat-prev h4 {
+  margin: 5px 0px 5px 0px;
+}
+.plat-prev p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.plat-prev__menu {
+  margin-left: 20px;
+}
+.plat-prev__prix {
+  margin-right: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */

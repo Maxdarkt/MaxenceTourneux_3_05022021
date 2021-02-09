@@ -1,6 +1,6 @@
 /*------------------------LOGO------------------------------------------*/
 .logo-head {
-    height: 65px;
+    height: 40px;
 }
 h1 {
     display: flex;
@@ -9,7 +9,7 @@ h1 {
 }
 
 /*---------------------------NAV--------------------------------------------*/
-nav {
+.head {
     background-color: $coulour-background__primary;
     display: flex;
     flex-direction: column;
@@ -49,3 +49,6 @@ nav {
 .btn-head{
     width:50%;
 }
+
+
+/*-------------------------------*/

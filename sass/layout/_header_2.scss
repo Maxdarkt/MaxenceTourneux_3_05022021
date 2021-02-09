@@ -1,0 +1,40 @@
+/*----------------------logo + retour------------------------------*/
+.head-h1{
+    display:flex;
+    margin-bottom:15px;
+}
+
+.retour{
+    color : black;
+    position:absolute;
+    left:20px;
+}
+
+.head-prev {
+    height: 250px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    &__image_1 {
+        background-image: url('./../../public/img/restaurants/palette_gout.jpg');
+    }
+}
+
+.conteneur_menus {
+    height:1200px;
+    background-color: $coulour-background__secondary;
+    border-radius:35px 35px 0px 0px;
+    position:relative;
+    top:-35px;
+}
+
+.title-h2{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    i {
+        height : 25px;
+    }
+}
