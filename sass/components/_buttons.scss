@@ -1,19 +1,17 @@
 .btn-head {
     background-color: $colour_primary;
     height: 50px;
+    width:50%;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 50px;
-    margin-bottom: 50px;
-
-    a {
+    margin-left:auto;
+    margin-right:auto;
+    &__link {
         text-decoration: none;
         color: $btn-color-text;
         font-weight: bold;
-    }
-
-    &__link {
     }
 
     &:hover {

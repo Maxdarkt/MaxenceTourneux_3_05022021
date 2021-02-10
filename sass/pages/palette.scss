@@ -1,7 +1,7 @@
 .plat-prev {
     height: 70px;
-    width: 98%;
-    margin: 0 1% 15px 1%;
+    width: 96%;
+    margin: 0 2% 15px 2%;
     background-color: white;
     border-radius: 15px;
     display: flex;
@@ -24,3 +24,22 @@
         margin-right: 20px;
     }
 }
+section .plat-prev:last-child{
+    margin-bottom: 50px;
+}
+
+.plat {
+
+    &__h4 {
+        margin: 0 0 0 3%;
+    }
+}
+
+.underline {
+    display: block;
+    background-color: $colour_tertiary;
+    height: 3px;
+    width: 40px;
+    margin: 0 0 3% 2%;
+}
+

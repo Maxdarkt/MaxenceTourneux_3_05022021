@@ -1,4 +1,7 @@
 /*----------------------logo + retour------------------------------*/
+.header{
+    height:275px;
+}
 .head-h1{
     display:flex;
     margin-bottom:15px;
@@ -20,14 +23,24 @@
     &__image_1 {
         background-image: url('./../../public/img/restaurants/palette_gout.jpg');
     }
+
+    &__image_2 {
+        background-image: url('./../../public/img/restaurants/note_enchantee.jpg');
+    }
+
+    &__image_3 {
+        background-image: url('./../../public/img/restaurants/francaise.jpg');
+    }
+
+    &__image_4 {
+        background-image: url('./../../public/img/restaurants/delice_sens.jpg');
+    }
 }
 
 .conteneur_menus {
-    height:1200px;
     background-color: $coulour-background__secondary;
     border-radius:35px 35px 0px 0px;
-    position:relative;
-    top:-35px;
+    padding-bottom:80px;
 }
 
 .title-h2{

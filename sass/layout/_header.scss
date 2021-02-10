@@ -1,4 +1,5 @@
 /*------------------------LOGO------------------------------------------*/
+
 .logo-head {
     height: 40px;
 }
@@ -15,6 +16,7 @@ h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-bottom:50px;
 }
 .local {
     height: 50px;
@@ -44,10 +46,6 @@ h1 {
     p {
         width: 90%;
     }
-}
-
-.btn-head{
-    width:50%;
 }
 
 

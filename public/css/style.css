@@ -42,13 +42,15 @@ button {
 .btn-head {
   background-color: #9356DC;
   height: 50px;
+  width: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 50px;
-  margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
 }
-.btn-head a {
+.btn-head__link {
   text-decoration: none;
   color: #FFFFFF;
   font-weight: bold;
@@ -114,6 +116,7 @@ h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-bottom: 50px;
 }
 
 .local {
@@ -146,12 +149,12 @@ h1 {
   width: 90%;
 }
 
-.btn-head {
-  width: 50%;
-}
-
 /*-------------------------------*/
 /*----------------------logo + retour------------------------------*/
+.header {
+  height: 275px;
+}
+
 .head-h1 {
   display: flex;
   margin-bottom: 15px;
@@ -173,13 +176,20 @@ h1 {
 .head-prev__image_1 {
   background-image: url("./../../public/img/restaurants/palette_gout.jpg");
 }
+.head-prev__image_2 {
+  background-image: url("./../../public/img/restaurants/note_enchantee.jpg");
+}
+.head-prev__image_3 {
+  background-image: url("./../../public/img/restaurants/francaise.jpg");
+}
+.head-prev__image_4 {
+  background-image: url("./../../public/img/restaurants/delice_sens.jpg");
+}
 
 .conteneur_menus {
-  height: 1200px;
   background-color: #eaeaea;
   border-radius: 35px 35px 0px 0px;
-  position: relative;
-  top: -35px;
+  padding-bottom: 80px;
 }
 
 .title-h2 {
@@ -305,8 +315,8 @@ section h3 {
 
 .plat-prev {
   height: 70px;
-  width: 98%;
-  margin: 0 1% 15px 1%;
+  width: 96%;
+  margin: 0 2% 15px 2%;
   background-color: white;
   border-radius: 15px;
   display: flex;
@@ -325,6 +335,22 @@ section h3 {
 }
 .plat-prev__prix {
   margin-right: 20px;
+}
+
+section .plat-prev:last-child {
+  margin-bottom: 50px;
+}
+
+.plat__h4 {
+  margin: 0 0 0 3%;
+}
+
+.underline {
+  display: block;
+  background-color: #99E2D0;
+  height: 3px;
+  width: 40px;
+  margin: 0 0 3% 2%;
 }
 
 /*# sourceMappingURL=style.css.map */
