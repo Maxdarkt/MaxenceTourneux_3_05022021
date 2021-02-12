@@ -1,17 +1,28 @@
 /*----------------------logo + retour------------------------------*/
-.header{
-    height:275px;
-}
-.head-h1{
-    display:flex;
-    margin-bottom:15px;
+.header {
+    height: 275px;
+    }
+
+.head{
+    &__h1 {
+        display: flex;
+        justify-content:center;
+        align-items:center;
+        margin-bottom: 15px;
+        &__retour {
+            width:30%;
+            color: black;
+        }
+        &__logo {
+            width:40%
+        }
+        &__empty{
+            width:30%;
+            margin:0;
+        }
+    }
 }
 
-.retour{
-    color : black;
-    position:absolute;
-    left:20px;
-}
 
 .head-prev {
     height: 250px;
@@ -45,8 +56,10 @@
 
 .title-h2{
     display:flex;
-    justify-content:space-around;
+    justify-content:space-between;
     align-items:center;
+    margin:auto;
+    width:94%;
     i {
         height : 25px;
     }

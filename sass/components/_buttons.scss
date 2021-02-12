@@ -21,12 +21,16 @@
 
 .btn-fon {
     height: 70px;
-    width: 96%;
+    width: 32%;
     margin-left: 2%;
     margin-right: 2%;
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @include mobile-only {
+        width: 96%;
+    }
 
 
     &__bulle {
