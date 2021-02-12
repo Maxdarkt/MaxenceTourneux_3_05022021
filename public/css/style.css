@@ -12,8 +12,11 @@ body {
 @media screen and (max-width: 980px) {
   body {
     width: 100%;
-    padding: 0;
-    margin: 0;
+  }
+}
+@media screen and (max-width: 599px) {
+  body {
+    width: 100%;
   }
 }
 
@@ -285,19 +288,30 @@ section h3 {
 /*----------------------Section Restaurants 4---------------------------------------------*/
 .lien {
   display: block;
-  width: 100%;
+  width: 45%;
   height: 250px;
   text-decoration: none;
   color: #000000;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 599px) {
+  .lien {
+    width: 100%;
+  }
 }
 
 .menu-4 {
   width: 94.5%;
-  height: 1050px;
+  height: auto;
   margin: 2% 2% 2% 3.5%;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+@media screen and (max-width: 599px) {
+  .menu-4 {
+    flex-direction: column;
+  }
 }
 .menu-4__prev {
   height: 100%;

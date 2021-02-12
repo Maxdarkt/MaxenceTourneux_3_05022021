@@ -5,9 +5,10 @@ body {
     margin-left:auto;
     margin-right:auto;
 
+    @include tablette {
+        width:100%;
+    }
     @include mobile-only {
         width:100%;
-        padding: 0;
-        margin: 0;
     }
 }
