@@ -16,12 +16,16 @@ body {
   line-height: 1.7;*/
 }
 
-h1, h2, h3, h4, h5, h6 {
+.shrikhand {
   font-family: "Shrikhand", sans-serif;
-  font-weight: 100;
-  /*
-  font-size: 5rem;
-  font-style: italic;*/
+}
+
+.bold {
+  font-weight: bold;
+}
+
+h4 {
+  font-weight: 900;
 }
 
 textarea {
@@ -134,7 +138,7 @@ h1 {
 }
 
 .title {
-  width: 70%;
+  width: 95%;
   text-align: center;
   display: flex;
   flex-direction: column;
