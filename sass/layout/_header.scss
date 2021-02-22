@@ -20,13 +20,13 @@ h1 {
 }
 .local {
     height: 50px;
-    width:100%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: $coulour-background__secondary;
-    border-top: 2px solid $coulour-border;
-    font-weight:bold;
+    font-weight: bold;
+    background: linear-gradient($coulour-border, 5px, $coulour-background__secondary);
+
     &__icone {
         width: 25px;
     }

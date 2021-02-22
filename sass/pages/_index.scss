@@ -46,6 +46,8 @@ section h3 {
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
+            display: flex;
+            justify-content: flex-end;
 
             &--1 {
                 background-image: url('./../../public/img/restaurants/palette_gout.jpg');
@@ -96,8 +98,23 @@ section h3 {
                 align-items: center;
 
 
-                i {
-                    &:active {
+                i:first-child {
+                    color: black;
+                    transition: color 1000ms;
+
+                    &:hover {
+                        color: $colour_primary;
+                    }
+                }
+
+                i:last-child {
+                    position: absolute;
+                    opacity: 0;
+                    color: $colour_primary;
+                    transition: opacity 500ms ease-out;
+
+                    &:hover {
+                        opacity: 1;
                         color: $colour_primary;
                     }
                 }

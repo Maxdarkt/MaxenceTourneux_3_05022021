@@ -1,0 +1,212 @@
+.plat-prev {
+    height: 70px;
+    width: 96%;
+    margin: 0 2% 15px 2%;
+    background-color: white;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    cursor: pointer;
+
+    h4 {
+        margin: 5px 0px 5px 0px;
+    }
+
+    p {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    &__menu {
+        margin-left: 20px;
+        width: 95%;
+
+        &:hover {
+            animation: checked 500ms forwards;
+        }
+    }
+
+    &__prix {
+        margin-right: 20px;
+        width: 5%;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    &__check {
+        width: 15%;
+        height:100%;
+        background-color: $colour_tertiary;
+    }
+}
+
+@keyframes checked {
+    0%{
+        width:95%;
+    }
+    100%{
+        width:80%;
+    }
+
+}
+
+
+
+section .plat-prev:last-child{
+    margin-bottom: 50px;
+}
+
+.plat {
+
+    &__h4 {
+        margin: 0 0 0 21px;
+    }
+}
+
+.underline {
+    display: block;
+    background-color: $colour_tertiary;
+    height: 3px;
+    width: 41px;
+    margin: 0 0 3% 20px;
+}
+
+/*-----------------------------SPINNER---------------------------------------------*/
+
+$size: 35px;
+$anim-dur: 1000ms;
+$num-bars: 3;
+$cycle: 5;
+$anim-delay: $anim-dur / $num-bars;
+$time: $anim-dur*$cycle;
+
+
+.container {
+    position: absolute;
+
+    @include mobile-only {
+        height: 100%;
+        width: 100%;
+    }
+    width:980px;
+    height:100%;
+    background-color: white;
+    z-index: 100;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    animation: delete $time forwards;
+    &__spinner {
+        width: $size*10;
+        height: $size*7;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+}
+
+.load {
+    &__bar {
+        background-color: $colour_primary;
+        height: $size;
+        width: $size;
+        border-radius: $size;
+        animation: bars $anim-dur backwards;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+
+        @for $i from 1 through $num-bars {
+            &--#{$i} {
+                animation-delay: $anim-delay * $i;
+            }
+        }
+    }
+}
+
+@keyframes bars {
+    0% {
+        //transform: scaleY(0.5);
+        transform: translate(0px,50px);
+        background-color: $colour_primary;
+    }
+
+    100% {
+        //transform: scaleY(1.0);
+        transform: translate(0px,-50px);
+        background-color: $colour_secondary;
+    }
+}
+
+@keyframes delete {
+    0% {
+        opacity: 1;
+        z-index: 100;
+        height: 100%;
+    }
+
+    90% {
+        opacity: 1;
+        z-index: 100;
+    }
+
+    95% {
+        opacity: 0;
+        z-index: 100;
+        height: 100%;
+    }
+
+    100% {
+        opacity: 0;
+        z-index: -100;
+        height: 0;
+    }
+}
+
+/*--------------------------------animations menu---------------------------------------------*/
+$delay_plat:100ms;
+$depart: $time - 500;
+
+section .plat-prev {
+    margin-top: 100px;
+    opacity: 0;
+    box-shadow: 0px 8px 10px darken($coulour-background__secondary,15%);
+
+    &:nth-child(1) {
+        animation: move-top 500ms ease-out both;
+        animation-delay: $depart;
+    }
+
+    &:nth-child(2) {
+        animation: move-top 500ms ease-out both;
+        animation-delay: $depart+$delay_plat*1;
+    }
+
+    &:nth-child(3) {
+        animation: move-top 500ms ease-out both;
+        animation-delay: $depart+$delay_plat*2;
+    }
+
+    &:nth-child(4) {
+        animation: move-top 500ms ease-out both;
+        animation-delay: $depart+$delay_plat*3;
+    }
+}
+
+
+@keyframes move-top {
+    0% {
+        margin-top :100px;
+        opacity:0;
+    }
+
+    100% {
+        margin-top: 0px;
+        opacity:1;
+    }
+}
+
+/*-------------------------------------Animation check sur menu-------------------------------*/
+
+

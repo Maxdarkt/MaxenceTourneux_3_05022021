@@ -1,13 +1,18 @@
 .btn-head {
     background-color: $colour_primary;
+    background-image: linear-gradient( $colour_secondary, 28px,rgba(147,86,220,0));
     height: 50px;
-    width:50%;
+    width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 50px;
-    margin-left:auto;
-    margin-right:auto;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0px 8px 10px darken($coulour-background__secondary,15%);
+    transition: background-color 500ms, box-shadow 300ms;
+
+
     &__link {
         text-decoration: none;
         color: $btn-color-text;
@@ -16,6 +21,7 @@
 
     &:hover {
         background-color: $colour_secondary;
+        box-shadow: 0px 12px 8px darken($coulour-background__secondary,12%);
     }
 }
 
@@ -27,7 +33,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
     @include mobile-only {
         width: 96%;
     }
@@ -53,6 +58,7 @@
         display: flex;
         align-items: center;
         cursor: pointer;
+        transition: background-color 500ms;
 
         &:hover {
             background-color: lighten($colour_primary,35%);
@@ -66,4 +72,17 @@
     p {
         margin-left: 20px;
     }
+}
+
+.btn-new {
+    width: 80px;
+    height: 30px;
+    font-weight:bold;
+    background-color: $colour_tertiary;
+    color: darken($colour_tertiary,35%);
+    border-radius : 3px;
+    margin-right:12px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
 }

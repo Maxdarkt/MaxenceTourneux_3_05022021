@@ -11,48 +11,64 @@
     <title>La note enchant&eacute;e</title>
 </head>
 <body>
+    <div class="container">
+        <div class="container__spinner">
+            <div class="load__bar load__bar--1"></div>
+            <div class="load__bar load__bar--2"></div>
+            <div class="load__bar load__bar--3"></div>
+        </div>
+    </div>
+
     <header class="header">
-        <h1 class="head-h1"><a href="./index.html" alt="flèche retour accueil" class="retour"><i class="fas fa-arrow-left"></i></a><img src="./public/img/logo/ohmyfood.png" alt="Logo Ohmyfood" class="logo-head" /></h1>
-        <div class="head-prev head-prev__image_2"></div>
+        <h1 class="head__h1"><a href="./index.html" alt="fl�che retour accueil" class="head__h1__retour"><i class="fas fa-arrow-left"></i></a><img src="./public/img/logo/ohmyfood.png" alt="Logo Ohmyfood" class="head__h1__logo" /><p class="head__h1__empty"></p></h1>
+        <div class="head-prev head-prev__image_1"></div>
     </header>
 
     <section class="conteneur_menus">
         <section>
-            <div class="title-h2">
-                <h2>La note enchant&eacute;e</h2><i class="far fa-heart"></i>
+            <div class="title-h2 shrikhand">
+                <div>
+                    <h2>La note enchant&eacute;e</h2>
+                </div>
+                <div>
+                    <i class="far fa-heart"></i><i class="fas fa-heart"></i>
+                </div>
+
             </div>
 
             <div class="plat">
                 <h4 class="plat__h4">ENTR&Eacute;ES</h4>
                 <span class="underline"></span>
 
-                <div class="plat-prev">
-                    <div class="plat-prev__menu">
-                        <h4>Ravioles de foie gras</h4>
-                        <p>Accompagn&eacute; de leur cr&egrave; &Agrave; la truffe</p>
+                <div class="container-plat">
+                    <div class="plat-prev">
+                        <div class="plat-prev__menu">
+                            <h4>Ravioles de foie gras</h4>
+                            <p>Accompagn&eacute; de leur cr&egrave; &Agrave; la truffe</p>
+                        </div>
+                        <p class="plat-prev__prix">25 &euro;</p>
                     </div>
-                    <p class="plat-prev__prix">25 &euro;</p>
-                </div>
-                <div class="plat-prev">
-                    <div class="plat-prev__menu">
-                        <h4>Caviar osci&egrave;</h4>
-                        <p>Sur blini &Agrave; la farine de bl&eacute; noir</p>
+                    <div class="plat-prev">
+                        <div class="plat-prev__menu">
+                            <h4>Caviar osci&egrave;</h4>
+                            <p>Sur blini &Agrave; la farine de bl&eacute; noir</p>
+                        </div>
+                        <p class="plat-prev__prix">35 &euro;</p>
                     </div>
-                    <p class="plat-prev__prix">35 &euro;</p>
-                </div>
-                <div class="plat-prev">
-                    <div class="plat-prev__menu">
-                        <h4>Homard et espuma de potiron</h4>
-                        <p>Marin&eacute; aux zestes d'orange</p>
+                    <div class="plat-prev">
+                        <div class="plat-prev__menu">
+                            <h4>Homard et espuma de potiron</h4>
+                            <p>Marin&eacute; aux zestes d'orange</p>
+                        </div>
+                        <p class="plat-prev__prix">20 &euro;</p>
                     </div>
-                    <p class="plat-prev__prix">20 &euro;</p>
-                </div>
-                <div class="plat-prev">
-                    <div class="plat-prev__menu">
-                        <h4>Foie gras de canard cuit entier</h4>
-                        <p>Confiture de figue et pain toast&eacute;</p>
+                    <div class="plat-prev">
+                        <div class="plat-prev__menu">
+                            <h4>Foie gras de canard cuit entier</h4>
+                            <p>Confiture de figue et pain toast&eacute;</p>
+                        </div>
+                        <p class="plat-prev__prix">35 &euro;</p>
                     </div>
-                    <p class="plat-prev__prix">35 &euro;</p>
                 </div>
             </div>
         </section>
@@ -62,26 +78,28 @@
                 <h4 class="plat__h4">PLATS</h4>
                 <span class="underline"></span>
 
-                <div class="plat-prev">
-                    <div class="plat-prev__menu">
-                        <h4>Noix de coquilles Saint-Jacques</h4>
-                        <p>Sur lit de pur&eacute; de c&eacute;leri-rave</p>
+                <div class="container-plat">
+                    <div class="plat-prev">
+                        <div class="plat-prev__menu">
+                            <h4>Noix de coquilles Saint-Jacques</h4>
+                            <p>Sur lit de pur&eacute; de c&eacute;leri-rave</p>
+                        </div>
+                        <p class="plat-prev__prix">40 &euro;</p>
                     </div>
-                    <p class="plat-prev__prix">40 &euro;</p>
-                </div>
-                <div class="plat-prev">
-                    <div class="plat-prev__menu">
-                        <h4>Langoustine poêlée</h4>
-                        <p>Pur&eacute; de patate douce</p>
+                    <div class="plat-prev">
+                        <div class="plat-prev__menu">
+                            <h4>Langoustine poêlée</h4>
+                            <p>Pur&eacute; de patate douce</p>
+                        </div>
+                        <p class="plat-prev__prix">35 &euro;</p>
                     </div>
-                    <p class="plat-prev__prix">35 &euro;</p>
-                </div>
-                <div class="plat-prev">
-                    <div class="plat-prev__menu">
-                        <h4>Mijot&eacute; de queue de boeuf</h4>
-                        <p>Et riz sauvage aux zestes de citron</p>
+                    <div class="plat-prev">
+                        <div class="plat-prev__menu">
+                            <h4>Mijot&eacute; de queue de boeuf</h4>
+                            <p>Et riz sauvage aux zestes de citron</p>
+                        </div>
+                        <p class="plat-prev__prix">44 &euro;</p>
                     </div>
-                    <p class="plat-prev__prix">44 &euro;</p>
                 </div>
             </div>
         </section>
@@ -91,26 +109,28 @@
                 <h4 class="plat__h4">DESSERTS</h4>
                 <span class="underline"></span>
 
-                <div class="plat-prev">
-                    <div class="plat-prev__menu">
-                        <h4>Macaron noisette et chocolat</h4>
-                        <p>Glace au caramel brun et sel de Gu&eacute;</p>
+                <div class="container-plat">
+                    <div class="plat-prev">
+                        <div class="plat-prev__menu">
+                            <h4>Macaron noisette et chocolat</h4>
+                            <p>Glace au caramel brun et sel de Gu&eacute;</p>
+                        </div>
+                        <p class="plat-prev__prix">18 &euro;</p>
                     </div>
-                    <p class="plat-prev__prix">18 &euro;</p>
-                </div>
-                <div class="plat-prev">
-                    <div class="plat-prev__menu">
-                        <h4>Baba au rhum revisit&eacute;</h4>
-                        <p>Avec son coulis de citron</p>
+                    <div class="plat-prev">
+                        <div class="plat-prev__menu">
+                            <h4>Baba au rhum revisit&eacute;</h4>
+                            <p>Avec son coulis de citron</p>
+                        </div>
+                        <p class="plat-prev__prix">22 &euro;</p>
                     </div>
-                    <p class="plat-prev__prix">22 &euro;</p>
-                </div>
-                <div class="plat-prev">
-                    <div class="plat-prev__menu">
-                        <h4>Tarte au citron meringu&eacute;e</h4>
-                        <p>D&eacute;structur&eacute;e</p>
+                    <div class="plat-prev">
+                        <div class="plat-prev__menu">
+                            <h4>Tarte au citron meringu&eacute;e</h4>
+                            <p>D&eacute;structur&eacute;e</p>
+                        </div>
+                        <p class="plat-prev__prix">23 &euro;</p>
                     </div>
-                    <p class="plat-prev__prix">23 &euro;</p>
                 </div>
             </div>
         </section>
@@ -125,7 +145,7 @@
             <a href="#"><i class="fas fa-utensils"></i>Proposer un restaurant</a>
             <a href="#"><i class="fas fa-hands-helping"></i>Devenir partenaire</a>
             <a href="#">Mentions l&eacute;gales</a>
-            <a href="#">Contact</a>
+            <a href="mailto:contact@ohmyfood.fr">Contact</a>
         </div>
     </footer>
 

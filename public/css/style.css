@@ -55,6 +55,7 @@ button {
 
 .btn-head {
   background-color: #9356DC;
+  background-image: linear-gradient(#FF79DA, 28px, rgba(147, 86, 220, 0));
   height: 50px;
   width: 50%;
   display: flex;
@@ -63,6 +64,8 @@ button {
   border-radius: 50px;
   margin-left: auto;
   margin-right: auto;
+  box-shadow: 0px 8px 10px #c4c4c4;
+  transition: background-color 500ms, box-shadow 300ms;
 }
 .btn-head__link {
   text-decoration: none;
@@ -71,6 +74,7 @@ button {
 }
 .btn-head:hover {
   background-color: #FF79DA;
+  box-shadow: 0px 12px 8px #cbcbcb;
 }
 
 .btn-fon {
@@ -106,6 +110,7 @@ button {
   display: flex;
   align-items: center;
   cursor: pointer;
+  transition: background-color 500ms;
 }
 .btn-fon__btn:hover {
   background-color: #f2eafb;
@@ -115,6 +120,19 @@ button {
 }
 .btn-fon p {
   margin-left: 20px;
+}
+
+.btn-new {
+  width: 80px;
+  height: 30px;
+  font-weight: bold;
+  background-color: #99E2D0;
+  color: #2c9c81;
+  border-radius: 3px;
+  margin-right: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /*------------------------LOGO------------------------------------------*/
@@ -144,9 +162,8 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #eaeaea;
-  border-top: 2px solid #cfcfcf;
   font-weight: bold;
+  background: linear-gradient(#cfcfcf, 5px, #eaeaea);
 }
 .local__icone {
   width: 25px;
@@ -179,16 +196,18 @@ h1 {
   justify-content: center;
   align-items: center;
   margin-bottom: 15px;
+  height: 40px;
 }
 .head__h1__retour {
-  width: 30%;
+  width: 40%;
   color: black;
 }
 .head__h1__logo {
-  width: 40%;
+  width: auto;
+  height: 40px;
 }
 .head__h1__empty {
-  width: 30%;
+  width: 40%;
   margin: 0;
 }
 
@@ -225,8 +244,34 @@ h1 {
   margin: auto;
   width: 94%;
 }
+.title-h2 div:last-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .title-h2 i {
   height: 25px;
+  cursor: pointer;
+}
+.title-h2 i:last-child {
+  position: absolute;
+}
+.title-h2 i:first-child {
+  color: black;
+  transition: color 1000ms;
+}
+.title-h2 i:first-child:hover {
+  color: #9356DC;
+}
+.title-h2 i:last-child {
+  position: absolute;
+  opacity: 0;
+  color: #9356DC;
+  transition: opacity 500ms ease-out;
+}
+.title-h2 i:last-child:hover {
+  opacity: 1;
+  color: #9356DC;
 }
 
 footer {
@@ -308,6 +353,8 @@ section h3 {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  display: flex;
+  justify-content: flex-end;
 }
 .menu-4__prev__img--1 {
   background-image: url("./../../public/img/restaurants/palette_gout.jpg");
@@ -349,7 +396,21 @@ section h3 {
   justify-content: flex-end;
   align-items: center;
 }
-.menu-4__prev__legende__icone i:active {
+.menu-4__prev__legende__icone i:first-child {
+  color: black;
+  transition: color 1000ms;
+}
+.menu-4__prev__legende__icone i:first-child:hover {
+  color: #9356DC;
+}
+.menu-4__prev__legende__icone i:last-child {
+  position: absolute;
+  opacity: 0;
+  color: #9356DC;
+  transition: opacity 500ms ease-out;
+}
+.menu-4__prev__legende__icone i:last-child:hover {
+  opacity: 1;
   color: #9356DC;
 }
 
@@ -362,6 +423,8 @@ section h3 {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  overflow: hidden;
+  cursor: pointer;
 }
 .plat-prev h4 {
   margin: 5px 0px 5px 0px;
@@ -372,11 +435,31 @@ section h3 {
 }
 .plat-prev__menu {
   margin-left: 20px;
+  width: 95%;
+}
+.plat-prev__menu:hover {
+  animation: checked 500ms forwards;
 }
 .plat-prev__prix {
   margin-right: 20px;
+  width: 5%;
+  display: flex;
+  justify-content: flex-end;
+}
+.plat-prev__check {
+  width: 15%;
+  height: 100%;
+  background-color: #99E2D0;
 }
 
+@keyframes checked {
+  0% {
+    width: 95%;
+  }
+  100% {
+    width: 80%;
+  }
+}
 section .plat-prev:last-child {
   margin-bottom: 50px;
 }
@@ -392,5 +475,116 @@ section .plat-prev:last-child {
   width: 41px;
   margin: 0 0 3% 20px;
 }
+
+/*-----------------------------SPINNER---------------------------------------------*/
+.container {
+  position: absolute;
+  width: 980px;
+  height: 100%;
+  background-color: white;
+  z-index: 100;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  animation: delete 5000ms forwards;
+}
+@media screen and (max-width: 980px) {
+  .container {
+    height: 100%;
+    width: 100%;
+  }
+}
+.container__spinner {
+  width: 350px;
+  height: 245px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.load__bar {
+  background-color: #9356DC;
+  height: 35px;
+  width: 35px;
+  border-radius: 35px;
+  animation: bars 1000ms backwards;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+.load__bar--1 {
+  animation-delay: 333.3333333333ms;
+}
+.load__bar--2 {
+  animation-delay: 666.6666666667ms;
+}
+.load__bar--3 {
+  animation-delay: 1000ms;
+}
+
+@keyframes bars {
+  0% {
+    transform: translate(0px, 50px);
+    background-color: #9356DC;
+  }
+  100% {
+    transform: translate(0px, -50px);
+    background-color: #FF79DA;
+  }
+}
+@keyframes delete {
+  0% {
+    opacity: 1;
+    z-index: 100;
+    height: 100%;
+  }
+  90% {
+    opacity: 1;
+    z-index: 100;
+  }
+  95% {
+    opacity: 0;
+    z-index: 100;
+    height: 100%;
+  }
+  100% {
+    opacity: 0;
+    z-index: -100;
+    height: 0;
+  }
+}
+/*--------------------------------animations menu---------------------------------------------*/
+section .plat-prev {
+  margin-top: 100px;
+  opacity: 0;
+  box-shadow: 0px 8px 10px #c4c4c4;
+}
+section .plat-prev:nth-child(1) {
+  animation: move-top 500ms ease-out both;
+  animation-delay: 4500ms;
+}
+section .plat-prev:nth-child(2) {
+  animation: move-top 500ms ease-out both;
+  animation-delay: 4600ms;
+}
+section .plat-prev:nth-child(3) {
+  animation: move-top 500ms ease-out both;
+  animation-delay: 4700ms;
+}
+section .plat-prev:nth-child(4) {
+  animation: move-top 500ms ease-out both;
+  animation-delay: 4800ms;
+}
+
+@keyframes move-top {
+  0% {
+    margin-top: 100px;
+    opacity: 0;
+  }
+  100% {
+    margin-top: 0px;
+    opacity: 1;
+  }
+}
+/*-------------------------------------Animation check sur menu-------------------------------*/
 
 /*# sourceMappingURL=style.css.map */
