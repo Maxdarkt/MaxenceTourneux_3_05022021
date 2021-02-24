@@ -426,51 +426,66 @@ section h3 {
   overflow: hidden;
   cursor: pointer;
 }
-.plat-prev h4 {
-  margin: 5px 0px 5px 0px;
-}
-.plat-prev p {
-  margin-top: 0;
-  margin-bottom: 0;
-}
 .plat-prev__menu {
   margin-left: 20px;
-  width: 95%;
+  margin-right: 20px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: space-between;
+  justify-content: center;
+}
+.plat-prev__menu h4, .plat-prev__menu p {
+  margin: 5px 0px 5px 0px;
+  width: 75%;
+  height: 25px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.plat-prev__menu p:last-child {
+  margin: 0px;
+  width: 25%;
+  height: 100%;
 }
 .plat-prev__menu:hover + .plat-prev__check {
-  animation: checked 500ms forwards;
+  animation: check 500ms forwards;
 }
 .plat-prev__menu:hover + .plat-prev__check i {
-  animation: rotate 500ms forwards;
+  animation: rotate 400ms forwards 200ms;
+}
+.plat-prev__menu:active + .plat-prev__check {
+  margin-right: 0px;
 }
 .plat-prev__menu:not(:hover) + .plat-prev__check {
-  animation: checked 500ms backwards reverse;
+  animation: check2 500ms backwards;
 }
 .plat-prev__prix {
-  margin-right: 20px;
-  width: 5%;
   display: flex;
   justify-content: flex-end;
+  align-items: center;
 }
 .plat-prev__check {
-  width: 0%;
+  width: 150px;
   height: 100%;
   background-color: #99E2D0;
-  order: 1;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-right: -150px;
 }
 .plat-prev__check i {
   color: white;
 }
 
-@keyframes checked {
+@keyframes check {
   0% {
-    width: 0%;
+    margin-right: -150px;
   }
   100% {
-    width: 15%;
+    margin-right: 0px;
   }
 }
 @keyframes rotate {
@@ -479,6 +494,14 @@ section h3 {
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+@keyframes check2 {
+  0% {
+    margin-right: 0px;
+  }
+  100% {
+    margin-right: -150px;
   }
 }
 section .plat-prev:last-child {
@@ -499,7 +522,7 @@ section .plat-prev:last-child {
 
 /*-----------------------------SPINNER---------------------------------------------*/
 .container {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
