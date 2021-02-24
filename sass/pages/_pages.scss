@@ -10,6 +10,18 @@
     overflow: hidden;
     cursor: pointer;
 
+    &:hover > .plat-prev__check {
+        animation: check 500ms forwards;
+
+        i {
+            animation: rotate 400ms forwards 200ms;
+        }
+    }
+
+    &:not(:hover) > .plat-prev__check {
+        animation: check2 500ms backwards;
+    }
+
     &__menu {
         margin-left: 20px;
         margin-right: 20px;
@@ -34,24 +46,6 @@
             margin: 0px;
             width: 25%;
             height: 100%;
-        }
-
-
-
-        &:hover + .plat-prev__check {
-            animation: check 500ms forwards;
-
-            i {
-                animation: rotate 400ms forwards 200ms;
-            }
-        }
-
-        &:active + .plat-prev__check {
-            margin-right: 0px;
-        }
-
-        &:not(:hover) + .plat-prev__check {
-            animation: check2 500ms backwards;
         }
     }
 

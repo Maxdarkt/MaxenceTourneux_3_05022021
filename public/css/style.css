@@ -426,6 +426,15 @@ section h3 {
   overflow: hidden;
   cursor: pointer;
 }
+.plat-prev:hover > .plat-prev__check {
+  animation: check 500ms forwards;
+}
+.plat-prev:hover > .plat-prev__check i {
+  animation: rotate 400ms forwards 200ms;
+}
+.plat-prev:not(:hover) > .plat-prev__check {
+  animation: check2 500ms backwards;
+}
 .plat-prev__menu {
   margin-left: 20px;
   margin-right: 20px;
@@ -449,18 +458,6 @@ section h3 {
   margin: 0px;
   width: 25%;
   height: 100%;
-}
-.plat-prev__menu:hover + .plat-prev__check {
-  animation: check 500ms forwards;
-}
-.plat-prev__menu:hover + .plat-prev__check i {
-  animation: rotate 400ms forwards 200ms;
-}
-.plat-prev__menu:active + .plat-prev__check {
-  margin-right: 0px;
-}
-.plat-prev__menu:not(:hover) + .plat-prev__check {
-  animation: check2 500ms backwards;
 }
 .plat-prev__prix {
   display: flex;
