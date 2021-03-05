@@ -54,8 +54,7 @@ button {
 }
 
 .btn-head {
-  background-color: #9356DC;
-  background-image: linear-gradient(#FF79DA, 28px, rgba(147, 86, 220, 0));
+  background: linear-gradient(#FF79DA, 28px, #9356dc);
   height: 50px;
   width: 50%;
   display: flex;
@@ -65,7 +64,7 @@ button {
   margin-left: auto;
   margin-right: auto;
   box-shadow: 0px 8px 10px #c4c4c4;
-  transition: background-color 500ms, box-shadow 300ms;
+  transition: filter 500ms, box-shadow 300ms;
 }
 .btn-head__link {
   text-decoration: none;
@@ -73,8 +72,8 @@ button {
   font-weight: bold;
 }
 .btn-head:hover {
-  background-color: #FF79DA;
   box-shadow: 0px 12px 8px #cbcbcb;
+  filter: brightness(1.1);
 }
 
 .btn-fon {
@@ -414,6 +413,78 @@ section h3 {
   color: #9356DC;
 }
 
+/*-----------------------------SPINNER---------------------------------------------*/
+.container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  z-index: 100;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  animation: delete 3200ms forwards;
+}
+.container__spinner {
+  width: 350px;
+  height: 245px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.load__bar {
+  background-color: #9356DC;
+  height: 35px;
+  width: 35px;
+  border-radius: 35px;
+  animation: bars 800ms backwards;
+  animation-iteration-count: 4;
+  animation-direction: alternate;
+}
+.load__bar--1 {
+  animation-delay: 0ms;
+}
+.load__bar--2 {
+  animation-delay: 533.3333333333ms;
+}
+.load__bar--3 {
+  animation-delay: 800ms;
+}
+
+@keyframes bars {
+  0% {
+    transform: translate(0px, 50px);
+    background-color: #9356DC;
+  }
+  100% {
+    transform: translate(0px, -50px);
+    background-color: #FF79DA;
+  }
+}
+@keyframes delete {
+  0% {
+    opacity: 1;
+    z-index: 100;
+    height: 100%;
+  }
+  90% {
+    opacity: 1;
+    z-index: 100;
+  }
+  95% {
+    opacity: 0;
+    z-index: 100;
+    height: 100%;
+  }
+  100% {
+    opacity: 0;
+    z-index: -100;
+    height: 0;
+  }
+}
 .plat-prev {
   height: 70px;
   width: 96%;
@@ -427,13 +498,14 @@ section h3 {
   cursor: pointer;
 }
 .plat-prev:hover > .plat-prev__check {
-  animation: check 500ms forwards;
+  margin: 0;
+  transition: margin 500ms linear;
 }
 .plat-prev:hover > .plat-prev__check i {
   animation: rotate 400ms forwards 200ms;
 }
 .plat-prev:not(:hover) > .plat-prev__check {
-  animation: check2 500ms backwards;
+  transition: margin 0.5s linear;
 }
 .plat-prev__menu {
   margin-left: 20px;
@@ -517,78 +589,6 @@ section .plat-prev:last-child {
   margin: 0 0 3% 20px;
 }
 
-/*-----------------------------SPINNER---------------------------------------------*/
-.container {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: white;
-  z-index: 100;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  animation: delete 5000ms forwards;
-}
-.container__spinner {
-  width: 350px;
-  height: 245px;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
-.load__bar {
-  background-color: #9356DC;
-  height: 35px;
-  width: 35px;
-  border-radius: 35px;
-  animation: bars 1000ms backwards;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-}
-.load__bar--1 {
-  animation-delay: 333.3333333333ms;
-}
-.load__bar--2 {
-  animation-delay: 666.6666666667ms;
-}
-.load__bar--3 {
-  animation-delay: 1000ms;
-}
-
-@keyframes bars {
-  0% {
-    transform: translate(0px, 50px);
-    background-color: #9356DC;
-  }
-  100% {
-    transform: translate(0px, -50px);
-    background-color: #FF79DA;
-  }
-}
-@keyframes delete {
-  0% {
-    opacity: 1;
-    z-index: 100;
-    height: 100%;
-  }
-  90% {
-    opacity: 1;
-    z-index: 100;
-  }
-  95% {
-    opacity: 0;
-    z-index: 100;
-    height: 100%;
-  }
-  100% {
-    opacity: 0;
-    z-index: -100;
-    height: 0;
-  }
-}
 /*--------------------------------animations menu---------------------------------------------*/
 section .plat-prev {
   margin-top: 100px;
@@ -597,19 +597,19 @@ section .plat-prev {
 }
 section .plat-prev:nth-child(1) {
   animation: move-top 500ms ease-out both;
-  animation-delay: 4500ms;
+  animation-delay: 50ms;
 }
 section .plat-prev:nth-child(2) {
   animation: move-top 500ms ease-out both;
-  animation-delay: 4600ms;
+  animation-delay: 150ms;
 }
 section .plat-prev:nth-child(3) {
   animation: move-top 500ms ease-out both;
-  animation-delay: 4700ms;
+  animation-delay: 250ms;
 }
 section .plat-prev:nth-child(4) {
   animation: move-top 500ms ease-out both;
-  animation-delay: 4800ms;
+  animation-delay: 350ms;
 }
 
 @keyframes move-top {

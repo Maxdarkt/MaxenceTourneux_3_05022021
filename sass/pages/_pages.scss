@@ -11,7 +11,8 @@
     cursor: pointer;
 
     &:hover > .plat-prev__check {
-        animation: check 500ms forwards;
+        margin:0; 
+        transition: margin 500ms linear;
 
         i {
             animation: rotate 400ms forwards 200ms;
@@ -19,7 +20,7 @@
     }
 
     &:not(:hover) > .plat-prev__check {
-        animation: check2 500ms backwards;
+        transition: margin 0.5s linear;
     }
 
     &__menu {
@@ -124,95 +125,9 @@ section .plat-prev:last-child{
     margin: 0 0 3% 20px;
 }
 
-/*-----------------------------SPINNER---------------------------------------------*/
-
-$size: 35px;
-$anim-dur: 1000ms;
-$num-bars: 3;
-$cycle: 5;
-$anim-delay: $anim-dur / $num-bars;
-$time: $anim-dur*$cycle;
-
-
-.container {
-    position: fixed;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-    background-color: white;
-    z-index: 100;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    animation: delete $time forwards;
-    &__spinner {
-        width: $size*10;
-        height: $size*7;
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-    }
-}
-
-.load {
-    &__bar {
-        background-color: $colour_primary;
-        height: $size;
-        width: $size;
-        border-radius: $size;
-        animation: bars $anim-dur backwards;
-        animation-iteration-count: infinite;
-        animation-direction: alternate;
-
-        @for $i from 1 through $num-bars {
-            &--#{$i} {
-                animation-delay: $anim-delay * $i;
-            }
-        }
-    }
-}
-
-@keyframes bars {
-    0% {
-        transform: translate(0px,50px);
-        background-color: $colour_primary;
-    }
-
-    100% {
-        transform: translate(0px,-50px);
-        background-color: $colour_secondary;
-    }
-}
-
-@keyframes delete {
-    0% {
-        opacity: 1;
-        z-index: 100;
-        height: 100%;
-    }
-
-    90% {
-        opacity: 1;
-        z-index: 100;
-    }
-
-    95% {
-        opacity: 0;
-        z-index: 100;
-        height: 100%;
-    }
-
-    100% {
-        opacity: 0;
-        z-index: -100;
-        height: 0;
-    }
-}
-
 /*--------------------------------animations menu---------------------------------------------*/
 $delay_plat:100ms;
-$depart: $time - 500;
+$depart: 50ms;
 
 section .plat-prev {
     margin-top: 100px;
