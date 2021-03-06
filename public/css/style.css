@@ -502,10 +502,11 @@ section h3 {
   transition: margin 500ms linear;
 }
 .plat-prev:hover > .plat-prev__check i {
-  animation: rotate 400ms forwards 200ms;
+  transition: transform 400ms ease-in-out 200ms;
+  transform: rotate(-360deg);
 }
 .plat-prev:not(:hover) > .plat-prev__check {
-  transition: margin 0.5s linear;
+  transition: margin 500ms linear;
 }
 .plat-prev__menu {
   margin-left: 20px;
@@ -549,30 +550,6 @@ section h3 {
   color: white;
 }
 
-@keyframes check {
-  0% {
-    margin-right: -150px;
-  }
-  100% {
-    margin-right: 0px;
-  }
-}
-@keyframes rotate {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-@keyframes check2 {
-  0% {
-    margin-right: 0px;
-  }
-  100% {
-    margin-right: -150px;
-  }
-}
 section .plat-prev:last-child {
   margin-bottom: 50px;
 }
