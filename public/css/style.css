@@ -249,7 +249,7 @@ h1 {
   align-items: center;
 }
 .title-h2 i {
-  height: 25px;
+  font-size: 25px;
   cursor: pointer;
 }
 .title-h2 i:last-child {
@@ -257,20 +257,17 @@ h1 {
 }
 .title-h2 i:first-child {
   color: black;
-  transition: color 1000ms;
-}
-.title-h2 i:first-child:hover {
-  color: #9356DC;
 }
 .title-h2 i:last-child {
-  position: absolute;
   opacity: 0;
-  color: #9356DC;
-  transition: opacity 500ms ease-out;
+  background: radial-gradient(circle at center, #9356DC 5%, #FF79DA 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: opacity 500ms ease-out, transform 500ms ease-out;
 }
 .title-h2 i:last-child:hover {
   opacity: 1;
-  color: #9356DC;
+  transform: scale(1.12);
 }
 
 footer {

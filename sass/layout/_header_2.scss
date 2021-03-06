@@ -70,8 +70,8 @@
     }
 
     i {
-        height: 25px;
-        cursor:pointer;
+        font-size: 25px;
+        cursor: pointer;
 
         &:last-child {
             position: absolute;
@@ -80,25 +80,22 @@
 
     i:first-child {
         color: black;
-        transition: color 1000ms;
-
-        &:hover {
-            color: $colour_primary;
-        }
     }
 
     i:last-child {
-        position: absolute;
         opacity: 0;
-        color: $colour_primary;
-        transition: opacity 500ms ease-out;
+        background: radial-gradient(circle at center, $colour_primary 5%,$colour_secondary 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transition: opacity 500ms ease-out, transform 500ms ease-out;
 
         &:hover {
             opacity: 1;
-            color: $colour_primary;
+            transform: scale(1.12);
         }
     }
 }
+
 
 
 
