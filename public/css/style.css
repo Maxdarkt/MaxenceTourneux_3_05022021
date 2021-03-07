@@ -392,22 +392,26 @@ section h3 {
   justify-content: flex-end;
   align-items: center;
 }
-.menu-4__prev__legende__icone i:first-child {
-  color: black;
-  transition: color 1000ms;
-}
-.menu-4__prev__legende__icone i:first-child:hover {
-  color: #9356DC;
+.menu-4__prev__legende__icone i {
+  font-size: 25px;
+  cursor: pointer;
 }
 .menu-4__prev__legende__icone i:last-child {
   position: absolute;
+}
+.menu-4__prev__legende__icone i:first-child {
+  color: black;
+}
+.menu-4__prev__legende__icone i:last-child {
   opacity: 0;
-  color: #9356DC;
-  transition: opacity 500ms ease-out;
+  background: radial-gradient(circle at center, #9356DC 5%, #FF79DA 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: opacity 500ms ease-out, transform 300ms ease-out;
 }
 .menu-4__prev__legende__icone i:last-child:hover {
   opacity: 1;
-  color: #9356DC;
+  transform: scale(1.1);
 }
 
 /*-----------------------------SPINNER---------------------------------------------*/

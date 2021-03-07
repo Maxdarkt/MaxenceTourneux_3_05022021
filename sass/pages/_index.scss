@@ -97,25 +97,29 @@ section h3 {
                 justify-content: flex-end;
                 align-items: center;
 
+                i {
+                    font-size: 25px;
+                    cursor: pointer;
 
-                i:first-child {
-                    color: black;
-                    transition: color 1000ms;
-
-                    &:hover {
-                        color: $colour_primary;
+                    &:last-child {
+                        position: absolute;
                     }
                 }
 
+                i:first-child {
+                    color: black;
+                }
+
                 i:last-child {
-                    position: absolute;
                     opacity: 0;
-                    color: $colour_primary;
-                    transition: opacity 500ms ease-out;
+                    background: radial-gradient(circle at center, $colour_primary 5%,$colour_secondary 100%);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    transition: opacity 500ms ease-out, transform 300ms ease-out;
 
                     &:hover {
                         opacity: 1;
-                        color: $colour_primary;
+                        transform: scale(1.1);
                     }
                 }
             }
